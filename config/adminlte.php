@@ -295,11 +295,11 @@ return [
             'submenu' => [
                 [
                     'text' => 'Nueva Venta',
-                    'url'  => '#',
+                    'url'  => 'venta/create',
                 ],
                 [
                     'text' => 'Ventas realizadas',
-                    'url'  => '#',
+                    'url'  => 'venta',
                 ],
             ],
         ],
@@ -310,11 +310,11 @@ return [
             'submenu' => [
                 [
                     'text' => 'Nueva compra',
-                    'url'  => '#',
+                    'url'  => 'compra/create',
                 ],
                 [
                     'text' => 'Compras realizadas',
-                    'url'  => '#',
+                    'url'  => 'compra',
                 ],
             ],
         ],
