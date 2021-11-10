@@ -272,11 +272,11 @@ return [
             'submenu' => [
                 [
                     'text' => 'Nuevo producto',
-                    'url'  => '#',
+                    'url'  => 'producto/create',
                 ],
                 [
                     'text' => 'Productos en almacén',
-                    'url'  => '#',
+                    'url'  => 'producto',
                 ],
                 [
                     'text' => 'Lo más vendido',
