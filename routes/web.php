@@ -14,5 +14,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('auth.login');
+})->middleware('auth');
+
+// Route::get('/admin', function () {
+//     return view('admin.index');
+// });
+Route::middleware(['auth:sanctum', 'verified'])->get('/', function () {
+    return view('admin.index');
+})->name('admin');
+Auth::routes();
+
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
